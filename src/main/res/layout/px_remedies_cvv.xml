@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:parentTag="android.widget.LinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ui_2_5m"
+        android:layout_marginEnd="@dimen/ui_2_5m"
+        android:theme="@style/InputTheme"
+        app:hintTextAppearance="@style/InputHintTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="number"
+            android:imeOptions="flagNoEnterAction"
+            android:textSize="@dimen/px_m_text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ui_3m"
+        android:layout_marginEnd="@dimen/ui_3m"
+        android:textColor="@color/px_payment_result_component_subtitle"
+        android:textSize="@dimen/px_xs_text"
+        tools:text="Los 3 números están al dorso de la tarjeta" />
+</merge>

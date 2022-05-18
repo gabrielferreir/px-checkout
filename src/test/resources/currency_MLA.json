@@ -1,0 +1,8 @@
+{
+  "id": "ARS",
+  "description": "Peso argentino",
+  "symbol": "$",
+  "decimal_places": 2,
+  "decimal_separator": ",",
+  "thousands_separator": "."
+}

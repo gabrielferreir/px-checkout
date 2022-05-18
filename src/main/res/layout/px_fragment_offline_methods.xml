@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/offline_methods"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mercadopago.android.px.internal.view.ToolbarCancel
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_toolbar_height"
+        android:visibility="invisible"
+        android:background="@color/px_checkout_offline_toolbar_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/coordinator"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:icon_color="@color/andes_gray_900"
+        tools:visibility="visible">
+
+        <com.mercadopago.android.px.internal.view.MPTextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/px_s_margin"
+            android:textColor="@color/px_expressCheckoutTextColor"
+            android:textSize="@dimen/px_m_text"
+            app:customStyle="semi_bold"
+            tools:text="Total $ 10.000" />
+    </com.mercadopago.android.px.internal.view.ToolbarCancel>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/offline_methods_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/px_top_rounded_container"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <View
+                android:id="@+id/pan_indicator"
+                android:layout_width="@dimen/ui_4m"
+                android:layout_height="@dimen/ui_050m"
+                android:layout_marginTop="@dimen/px_s_margin"
+                android:background="@drawable/px_short_line_rounded"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/fake_footer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_2m"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/methods"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/fake_footer"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_sheet_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/px_white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
+
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shadow_top"
+            app:layout_goneMarginBottom="@dimen/ui_3m"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottom_description">
+        </View>
+
+        <com.mercadopago.android.px.internal.view.MPTextView
+            android:id="@+id/bottom_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/ui_2m"
+            android:layout_marginHorizontal="@dimen/ui_3m"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shadow"
+            app:layout_constraintBottom_toTopOf="@id/confirm_button_container"
+            tools:text="Procesado por Mercado Pago Estándar"/>
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/confirm_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ui_3m"
+            android:layout_marginHorizontal="@dimen/ui_3m"
+            app:layout_constraintTop_toBottomOf="@id/bottom_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout="@layout/px_fragment_confirm_button"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

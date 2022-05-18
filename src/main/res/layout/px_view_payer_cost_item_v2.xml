@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/ui_1_75m"
+    android:paddingBottom="@dimen/ui_1_75m"
+    android:paddingStart="@dimen/px_m_margin"
+    android:paddingEnd="@dimen/px_m_margin"
+    android:focusable="true">
+
+    <RadioButton
+        android:id="@+id/radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mpsdkInstallmentsText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/mpsdkInstallmentsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:customStyle="semi_bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/radio_button"
+        android:textColor="@color/px_base_text"
+        android:textSize="@dimen/px_xs_text"
+        tools:text="3x $ 173" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/mpsdkInstallmentsInterestTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_xs_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mpsdkReimbursement"
+        android:visibility="gone"
+        tools:text="@string/px_zero_rate"
+        tools:textColor="@color/px_discount_description"
+        tools:visibility="visible"/>
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/mpsdkReimbursement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_xs_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        tools:textColor="@color/px_discount_description"
+        tools:visibility="visible"
+        tools:text="Ahorro con tu banco" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/mpsdkInstallmentsInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_xs_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="1040" />
+</androidx.constraintlayout.widget.ConstraintLayout>

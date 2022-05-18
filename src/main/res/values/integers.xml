@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="px_card_flip_time_full">800</integer>
+    <integer name="px_card_flip_time_half">400</integer>
+    <integer name="px_default_animation_time">300</integer>
+    <integer name="px_document_anim_time">400</integer>
+    <integer name="px_default_animation_offset">100</integer>
+    <integer name="px_long_animation_time">500</integer>
+    <integer name="px_short_animation_time">200</integer>
+    <integer name="px_shorter_animation_time">150</integer>
+    <integer name="px_shortest_animation_time">100</integer>
+    <integer name="px_card_form_animation_time">@integer/cf_anim_duration</integer>
+    <integer name="px_card_form_animation_offset">350</integer>
+    <integer name="px_card_form_animation_offset_small">175</integer>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/px_l_margin"
+    android:paddingBottom="@dimen/px_l_margin"
+    android:paddingEnd="@dimen/px_l_margin"
+    android:paddingStart="@dimen/px_l_margin"
+    android:importantForAccessibility="noHideDescendants">
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ui_meli_black"
+        android:textSize="@dimen/px_l_text"
+        tools:text="Title"/>
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/help_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_s_margin"
+        android:textColor="@color/ui_meli_dark_grey"
+        android:textSize="@dimen/px_s_text"
+        tools:text="Description"/>
+
+</LinearLayout>

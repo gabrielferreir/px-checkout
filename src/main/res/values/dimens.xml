@@ -1,0 +1,107 @@
+<resources>
+    <dimen name="px_padding_hlf">5dp</dimen>
+    <dimen name="px_regular_text">16dp</dimen>
+    <dimen name="px_small_text">14dp</dimen>
+    <dimen name="px_smaller_text">12dp</dimen>
+    <dimen name="px_title_text">20dp</dimen>
+    <dimen name="px_large_text">22dp</dimen>
+    <dimen name="px_box_default_stroke">1dp</dimen>
+    <dimen name="px_big_text">22dp</dimen>
+    <dimen name="px_medium_text">16dp</dimen>
+    <dimen name="px_card_background_height">208dp</dimen>
+    <dimen name="px_payer_information_background_height">226dp</dimen>
+    <dimen name="px_button_height">55dp</dimen>
+    <dimen name="px_toolbar_height">55dp</dimen>
+    <dimen name="px_appbar_height">150dp</dimen>
+    <dimen name="px_list_item_height">55dp</dimen>
+    <dimen name="px_list_item_height_large">72dp</dimen>
+    <dimen name="px_card_camera_distance">2560dp</dimen>
+    <dimen name="px_card_size_extra_big_height">171dp</dimen>
+    <dimen name="px_card_size_extra_big_width">266dp</dimen>
+    <dimen name="px_card_size_big_height">151dp</dimen>
+    <dimen name="px_card_size_big_width">234dp</dimen>
+    <dimen name="px_card_size_medium_height">121dp</dimen>
+    <dimen name="px_card_size_medium_width">186dp</dimen>
+    <dimen name="px_card_size_big_width_no_border">224dp</dimen>
+    <dimen name="px_card_size_big_shadow_width">146dp</dimen>
+    <dimen name="px_card_size_medium_height_no_border">141dp</dimen>
+    <dimen name="px_payer_cost_small_text">20dp</dimen>
+    <dimen name="px_payer_cost_total_small_text">14dp</dimen>
+    <dimen name="px_title_pager_padding_right">54dp</dimen>
+    <dimen name="px_badge_size">25dp</dimen>
+    <dimen name="px_bigger_badge_size">52dp</dimen>
+    <dimen name="px_badge_offset">16dp</dimen>
+    <dimen name="px_onetap_pager_item_padding">24dp</dimen>
+
+    <!-- Payment result components -->
+
+    <!-- Margin -->
+    <dimen name="px_xxxl_margin">50dp</dimen>
+    <dimen name="px_xl_margin">40dp</dimen>
+    <dimen name="px_l_margin">32dp</dimen>
+    <dimen name="px_m_margin">24dp</dimen>
+    <dimen name="px_s_margin">16dp</dimen>
+    <dimen name="px_xs_margin">12dp</dimen>
+    <dimen name="px_xxs_margin">8dp</dimen>
+    <dimen name="px_xxxs_margin">4dp</dimen>
+    <dimen name="px_xxxxs_margin">2dp</dimen>
+
+    <dimen name="px_xl_alternative_margin">38dp</dimen>
+    <dimen name="px_l_alternative_margin">30dp</dimen>
+    <dimen name="px_m_alternative_margin">25dp</dimen>
+    <dimen name="px_m_alternative_1_margin">22dp</dimen>
+    <dimen name="px_m_alternative_2_margin">18dp</dimen>
+    <dimen name="px_s_alternative_margin">15dp</dimen>
+    <dimen name="px_s_alternative_1_margin">14dp</dimen>
+    <dimen name="px_xs_alternative_1_margin">11dp</dimen>
+    <dimen name="px_xxs_alternative_margin">10dp</dimen>
+    <dimen name="px_xxxs_alternative_1_margin">5dp</dimen>
+    <dimen name="px_xxxs_alternative_margin">3dp</dimen>
+
+    <!-- Height -->
+    <dimen name="px_height_low_res">24dp</dimen>
+    <dimen name="px_xxxl_height">98dp</dimen>
+    <dimen name="px_xxl_height">90dp</dimen>
+    <dimen name="px_xl_height">80dp</dimen>
+    <dimen name="px_m_height">48dp</dimen>
+    <dimen name="px_s_height">40dp</dimen>
+    <dimen name="px_xxxs_height">1dp</dimen>
+    <dimen name="px_zero_height">0dp</dimen>
+
+    <dimen name="px_xxxl_alternative_1_height">96dp</dimen>
+
+    <dimen name="px_promotion_logo_width">120dp</dimen>
+
+    <!-- Text -->
+    <dimen name="px_xxxl_text">26dp</dimen>
+    <dimen name="px_xxl_text">24dp</dimen>
+    <dimen name="px_xl_text">22dp</dimen>
+    <dimen name="px_l_text">20dp</dimen>
+    <dimen name="px_l_alternative_1_text">19dp</dimen>
+    <dimen name="px_m_text">18dp</dimen>
+    <dimen name="px_s_text">16dp</dimen>
+    <dimen name="px_xs_text">14dp</dimen>
+    <dimen name="px_xxs_text">12dp</dimen>
+    <dimen name="px_xxxs_text">10dp</dimen>
+
+    <!-- Animation -->
+    <dimen name="px_camera_distance">2560dp</dimen>
+    <dimen name="pulseStrokeWidth">2dp</dimen>
+    <dimen name="pulseRadius">64dp</dimen>
+
+    <!-- Weight -->
+    <dimen name="weight_semi_bold">600</dimen>
+
+    <!-- Consumer Credits Tag -->
+    <dimen name="cc_tag_small_corner_radius">12dp</dimen>
+    <dimen name="cc_tag_medium_margin">8dp</dimen>
+    <dimen name="card_drawer_tag_vertical_padding">6dp</dimen>
+    <dimen name="card_drawer_tag_vertical_padding_small">2dp</dimen>
+    <dimen name="cc_tag_font">11dp</dimen>
+
+    <!-- Card view -->
+    <dimen name="px_card_view_stroke_width">2dp</dimen>
+    <dimen name="px_card_view_stroke_dash_width">4dp</dimen>
+    <dimen name="px_card_view_stroke_dash_gap">4dp</dimen>
+
+</resources>

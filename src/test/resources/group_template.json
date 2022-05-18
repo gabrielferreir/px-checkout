@@ -1,0 +1,9 @@
+{
+  "id": "%1$s",
+  "type": "%2$s",
+  "description": "%3$s",
+  "comment": "%4$s",
+  "children": [],
+  "children_header": "",
+  "show_icon": true
+}

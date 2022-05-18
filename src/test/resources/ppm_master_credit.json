@@ -1,0 +1,7 @@
+{
+  "description": "Ending in 9901",
+  "id": "113210123",
+  "payment_type_id": "credit_card",
+  "payment_method_id": "master",
+  "esc_status": "rejected"
+}

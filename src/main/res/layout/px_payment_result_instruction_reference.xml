@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:parentTag="androidx.appcompat.widget.LinearLayoutCompat"
+    android:layout_height="wrap_content">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/px_payment_result_black_text"
+        android:textSize="@dimen/px_l_text"
+        tools:text="Title" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/px_payment_result_gray_text"
+        android:textSize="@dimen/px_xxs_text"
+        tools:text="Label" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/reference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/px_payment_result_black_text"
+        android:textSize="@dimen/px_l_text"
+        tools:text="1234 1234 1234" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/px_payment_result_gray_text"
+        android:textSize="@dimen/px_s_text"
+        tools:text="comment" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+</merge>

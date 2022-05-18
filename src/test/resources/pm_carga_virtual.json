@@ -1,0 +1,16 @@
+{
+  "additional_info_needed": [
+  ],
+  "id": "cargavirtual",
+  "name": "Kioscos y comercios cercanos",
+  "payment_type_id": "ticket",
+  "status": "active",
+  "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/cargavirtual.gif",
+  "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/cargavirtual.gif",
+  "deferred_capture": "does_not_apply",
+  "settings": [
+  ],
+  "min_allowed_amount": 0.01,
+  "max_allowed_amount": 5000,
+  "accreditation_time": 0
+}

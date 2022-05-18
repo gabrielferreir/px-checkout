@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="px_fragment_container_important" type="id"/>
+    <item name="px_fragment_container_top" type="id"/>
+    <item name="px_fragment_container_bottom" type="id"/>
+    <item name="px_fragment_container_dynamic_top" type="id"/>
+    <item name="px_fragment_container_dynamic_bottom" type="id"/>
+    <item name="px_main_container" type="id"/>
+    <item name="px_button_primary" type="id"/>
+    <item name="px_card_account_money" type="id"/>
+</resources>

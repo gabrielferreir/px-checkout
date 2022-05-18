@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:parentTag="android.widget.FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ui_2m"
+        android:textColor="@color/px_color_translucent_black"
+        android:lineSpacingExtra="@dimen/ui_050m"
+        tools:text="Te pediremos que completes algunos datos y que tengas a mano tu DNI para sacarle una foto. Solo te llevará 2 minutos." />
+
+</merge>

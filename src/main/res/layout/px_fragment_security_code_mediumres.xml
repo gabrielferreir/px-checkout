@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context=".internal.features.security_code.SecurityCodeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cvv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/CvvToolbarTransparentTheme"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cvv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:lineSpacingExtra="6sp"
+        android:maxLines="2"
+        android:text="@string/px_security_code_screen_title"
+        android:textAppearance="@style/MLFont.Bold.Semi"
+        android:textColor="#cc000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvv_toolbar"
+        tools:text="Ingresa el código de seguridad" />
+
+    <TextView
+        android:id="@+id/cvv_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#cc000000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvv_title"
+        tools:text="Búscalo en el Home Banking o la app de CAIXA." />
+
+    <com.meli.android.carddrawer.model.CardDrawerViewMediumres
+        android:id="@+id/card_drawer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="45.5dp"
+        app:card_header_behaviour="responsive"
+        app:card_header_internal_padding="0dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_button_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/cvv_edit_text_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/card_drawer"
+        app:layout_constraintBottom_toBottomOf="@id/card_drawer"/>
+
+    <com.mercadolibre.android.andesui.textfield.AndesTextfieldCode
+        android:id="@+id/cvv_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:inputType="number"
+        app:andesTextfieldCodeLabel="@string/px_security_code"
+        app:layout_constraintTop_toBottomOf="@id/cvv_edit_text_top"
+        app:layout_constraintBottom_toTopOf="@id/confirm_button_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/confirm_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/px_fragment_confirm_button"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

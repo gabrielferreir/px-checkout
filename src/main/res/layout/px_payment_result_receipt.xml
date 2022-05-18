@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/px_white">
+
+    <include layout="@layout/px_payment_result_method_icon"
+        android:id="@+id/icon_container"
+        android:layout_width="@dimen/px_m_height"
+        android:layout_height="@dimen/px_m_height"
+        android:layout_marginStart="@dimen/px_l_margin"
+        android:layout_marginLeft="@dimen/px_l_margin"
+        android:layout_marginTop="@dimen/px_s_margin"
+        android:layout_marginBottom="@dimen/px_s_margin"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/px_payment_result_component_title"
+        android:textSize="@dimen/px_s_text"
+        android:lineSpacingExtra="@dimen/px_xxxs_margin"
+        tools:text="Operación #1234"
+        android:layout_marginStart="@dimen/px_s_margin"
+        android:layout_marginLeft="@dimen/px_s_margin"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginRight="@dimen/px_l_margin"
+        android:layout_marginTop="@dimen/px_s_margin"
+        app:customStyle="semi_bold"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/icon_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/date"/>
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/px_payment_result_component_subtitle"
+        android:textSize="@dimen/px_xs_text"
+        android:lineSpacingExtra="@dimen/px_xxxs_margin"
+        tools:text="4 de diciembre de 2017"
+        android:layout_marginStart="@dimen/px_s_margin"
+        android:layout_marginLeft="@dimen/px_s_margin"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginRight="@dimen/px_l_margin"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="@dimen/px_s_margin"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/icon_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</merge>

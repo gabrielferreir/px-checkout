@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:viewBindingIgnore="true">
+
+    <include
+        android:id="@+id/px_add_new_card"
+        layout="@layout/px_other_payment_method_card_view_large_low_res"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <include
+        android:id="@+id/px_off_payment_method"
+        layout="@layout/px_other_payment_method_card_view_large_low_res"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+</FrameLayout>

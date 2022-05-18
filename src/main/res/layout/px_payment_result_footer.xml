@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.widget.LinearLayout"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/px_view_separator"
+        android:id="@+id/separator"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ui_2m" />
+
+    <include layout="@layout/px_view_countdown"
+        android:id="@+id/auto_return"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/confirm_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ui_1m"
+        android:layout_marginStart="@dimen/ui_3m"
+        android:layout_marginEnd="@dimen/ui_3m"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <com.mercadolibre.android.andesui.button.AndesButton
+        android:id="@+id/primary_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ui_3m"
+        android:layout_marginEnd="@dimen/ui_3m"
+        android:layout_marginBottom="@dimen/ui_1m"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:andesButtonHierarchy="loud"
+        tools:andesButtonText="Pagar" />
+
+    <com.mercadolibre.android.andesui.button.AndesButton
+        android:id="@+id/secondary_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ui_1m"
+        android:layout_marginStart="@dimen/ui_3m"
+        android:layout_marginEnd="@dimen/ui_3m"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:andesButtonHierarchy="quiet"
+        tools:andesButtonText="Pagar con otro medio" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ui_1m"/>
+
+</merge>

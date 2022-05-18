@@ -1,0 +1,227 @@
+<resources>
+
+    <style name="px_collapsing_toolbar_text_large" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/px_toolbar_text</item>
+    </style>
+
+    <style name="px_collapsing_toolbar_text_medium" parent="Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/px_toolbar_text</item>
+    </style>
+
+    <style name="px_collapsing_review_toolbar_text_large" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/px_review_toolbar_text</item>
+    </style>
+
+    <style name="px_collapsing_review_toolbar_text_medium" parent="Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/px_review_toolbar_text</item>
+    </style>
+
+    <style name="px_toolbar_text">
+        <item name="android:textColor">@color/px_toolbar_text</item>
+    </style>
+
+    <style name="px_toolbar_text_large" parent="px_toolbar_text">
+        <item name="android:textSize">@dimen/px_l_text</item>
+    </style>
+
+    <style name="px_toolbar_text_medium" parent="px_toolbar_text">
+        <item name="android:textSize">@dimen/px_m_text</item>
+    </style>
+
+    <style name="px_toolbar_text_small" parent="px_toolbar_text">
+        <item name="android:textSize">@dimen/px_s_text</item>
+    </style>
+
+    <style name="px_toolbar_text_xx_small" parent="px_toolbar_text">
+        <item name="android:textSize">@dimen/px_xxs_text</item>
+    </style>
+
+    <style name="px_button_normal" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/px_button</item>
+        <item name="android:textSize">@dimen/px_big_text</item>
+        <item name="android:textColor">@color/px_white</item>
+    </style>
+
+    <style name="px_title_text">
+        <item name="android:textSize">@dimen/px_title_text</item>
+        <item name="android:textColor">@color/px_toolbar_text</item>
+    </style>
+
+    <!-- bold -->
+    <style name="px_list_label">
+        <item name="android:textSize">@dimen/px_regular_text</item>
+        <item name="android:textColor">@color/px_form_text</item>
+    </style>
+
+    <style name="px_list_label_comment">
+        <item name="android:textSize">@dimen/px_small_text</item>
+        <item name="android:textColor">@color/px_comment_color</item>
+    </style>
+
+    <style name="px_simple_spinner">
+        <item name="android:textSize">@dimen/px_regular_text</item>
+        <item name="android:textColor">@color/px_base_text</item>
+    </style>
+
+    <style name="px_small_white_text">
+        <item name="android:textSize">@dimen/px_small_text</item>
+        <item name="android:textColor">@color/px_white</item>
+    </style>
+
+    <style name="px_big_text_light">
+        <item name="android:textSize">@dimen/px_big_text</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="Theme.MercadoPagoTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/px_colorPrimaryDark</item>
+        <item name="android:colorPrimary">@color/px_colorPrimary</item>
+        <item name="android:colorAccent">@color/ui_components_android_color_accent</item>
+    </style>
+
+    <style name="MPTransparentActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@color/px_white</item>
+    </style>
+
+    <style name="HeaderTitleText">
+        <item name="android:textSize">@dimen/px_l_text</item>
+        <item name="android:textColor">@color/ui_meli_black</item>
+    </style>
+
+    <style name="TimeText">
+        <item name="android:textColor">@color/ui_meli_dark_grey</item>
+        <item name="android:textSize">@dimen/px_xs_text</item>
+        <item name="android:drawablePadding">@dimen/px_xxxs_margin</item>
+        <item name="android:drawableLeft">@drawable/px_time</item>
+        <item name="android:drawableStart">@drawable/px_time</item>
+    </style>
+
+    <style name="HeaderSubtitleText">
+        <item name="android:textSize">@dimen/px_s_text</item>
+        <item name="android:textColor">@color/ui_meli_dark_grey</item>
+    </style>
+
+    <style name="DealsLogoName">
+        <item name="android:textSize">@dimen/px_title_text</item>
+        <item name="android:textColor">@color/ui_meli_grey</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="DealsListTitle">
+        <item name="android:textSize">@dimen/px_regular_text</item>
+        <item name="android:textColor">@color/px_real_black</item>
+    </style>
+
+    <style name="DealsDescription">
+        <item name="android:textSize">@dimen/px_small_text</item>
+        <item name="android:textColor">@color/ui_meli_grey</item>
+    </style>
+
+    <style name="DealsDetailTitle">
+        <item name="android:textSize">@dimen/px_title_text</item>
+        <item name="android:textColor">@color/ui_meli_black</item>
+    </style>
+
+    <style name="DealsLegal">
+        <item name="android:textSize">@dimen/px_smaller_text</item>
+        <item name="android:textColor">@color/ui_meli_grey</item>
+    </style>
+
+    <style name="PXScrollingPagerIndicator">
+        <item name="px_spi_dotColor">@android:color/darker_gray</item>
+        <item name="px_spi_dotSelectedColor">@android:color/darker_gray</item>
+        <item name="px_spi_dotSize">6dp</item>
+        <item name="px_spi_dotSelectedSize">10dp</item>
+        <item name="px_spi_dotSpacing">8dp</item>
+        <item name="px_spi_visibleDotCount">5</item>
+        <item name="px_spi_visibleDotThreshold">2</item>
+        <item name="px_spi_looped">false</item>
+    </style>
+
+    <style name="InputTheme">
+        <item name="colorControlNormal">@color/px_expressCheckoutInstallmentTitle</item>
+        <item name="colorControlActivated">@color/ui_components_primary_color</item>
+        <item name="colorControlHighlight">@color/ui_components_primary_color</item>
+        <item name="android:textSize">@dimen/px_m_text</item>
+        <item name="android:textColor">@color/ui_fullscreenmodal_toolbar_text_color</item>
+    </style>
+
+    <style name="InputHintTheme" parent="TextAppearance.Design.Hint">
+        <item name="android:textColorHint">@color/px_expressCheckoutInstallmentTitle</item>
+        <item name="android:textColor">@color/px_expressCheckoutInstallmentTitle</item>
+        <item name="android:textSize">@dimen/px_xs_text</item>
+    </style>
+
+    <style name="touchpointLabel" parent="MLFont.Bold.Semi">
+        <item name="android:lineSpacingExtra">@dimen/ui_linespacing_small</item>
+        <item name="android:textColor">@color/ui_fullscreenmodal_toolbar_text_color</item>
+        <item name="android:textSize">@dimen/ui_fontsize_large</item>
+    </style>
+
+    <style name="background_consumer_credits">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:foreground">@drawable/px_background_cc</item>
+    </style>
+
+    <style name="logo_consumer_credits">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">@dimen/px_s_margin</item>
+        <item name="android:src">@drawable/px_logo_cc</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="layout_constraintVertical_bias">0</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <style name="top_text_consumer_credits" parent="text_consumer_credits">
+        <item name="fontStyle">normal</item>
+        <item name="fontWeight">@dimen/weight_semi_bold</item>
+        <item name="android:textSize">@dimen/px_s_text</item>
+        <item name="android:layout_marginStart">@dimen/px_s_margin</item>
+    </style>
+
+    <style name="bottom_text_consumer_credits" parent="text_consumer_credits">
+        <item name="android:textSize">@dimen/px_xxs_text</item>
+        <item name="android:layout_marginBottom">@dimen/px_xs_margin</item>
+    </style>
+
+    <style name="bottom_text_consumer_credits_large" parent="text_consumer_credits">
+        <item name="android:textSize">@dimen/px_xxs_text</item>
+        <item name="android:layout_marginBottom">@dimen/px_s_margin</item>
+    </style>
+
+    <style name="text_consumer_credits">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginEnd">@dimen/px_s_margin</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="card_view_consumer_credits">
+        <item name="cardElevation">@dimen/px_xxxxs_margin</item>
+        <item name="cardCornerRadius">@dimen/px_xs_margin</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="android:layout_marginBottom">@dimen/px_s_margin</item>
+    </style>
+
+    <style name="text_tag_consumer_credits">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/px_cc_tag_background</item>
+        <item name="android:textColor">@color/andes_blue_mp_500</item>
+    </style>
+
+</resources>

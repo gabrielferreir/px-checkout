@@ -1,0 +1,9 @@
+{
+  "id": "credit_card",
+  "type": "payment_type",
+  "description": "Credit card",
+  "comment": "",
+  "children": null,
+  "children_header": null,
+  "show_icon": true
+}

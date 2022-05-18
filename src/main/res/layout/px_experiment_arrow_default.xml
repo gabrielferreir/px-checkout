@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arrow"
+    android:layout_width="15dp"
+    android:layout_height="10dp"
+    android:layout_marginEnd="@dimen/px_l_margin"
+    android:scaleType="center"
+    android:layout_gravity="center_vertical"
+    app:tint="@color/ui_components_primary_color"
+    android:src="@drawable/px_arrow_down" />

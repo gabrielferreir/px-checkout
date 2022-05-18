@@ -1,0 +1,37 @@
+{
+  "id": "ticket",
+  "type": "group",
+  "description": "Cash payment",
+  "comment": null,
+  "children": [
+    {
+      "id": "pagofacil",
+      "type": "payment_method",
+      "description": "Pago Fácil",
+      "comment": "It will be accredited instantly",
+      "children": null,
+      "children_header": null,
+      "show_icon": true
+    },
+    {
+      "id": "rapipago",
+      "type": "payment_method",
+      "description": "Rapipago",
+      "comment": "It will be accredited instantly",
+      "children": null,
+      "children_header": null,
+      "show_icon": true
+    },
+    {
+      "id": "cargavirtual",
+      "type": "payment_method",
+      "description": "Kioscos y comercios cercanos",
+      "comment": "It will be accredited instantly",
+      "children": null,
+      "children_header": null,
+      "show_icon": true
+    }
+  ],
+  "children_header": "Where do you want to pay?",
+  "show_icon": true
+}

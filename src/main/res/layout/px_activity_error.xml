@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/px_white"
+    android:paddingLeft="@dimen/px_l_margin"
+    android:paddingRight="@dimen/px_l_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_xl_height"
+            android:layout_height="@dimen/px_xl_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/px_m_margin"
+            android:src="@drawable/px_icon_error"/>
+
+        <com.mercadopago.android.px.internal.view.MPTextView
+            android:id="@+id/titleErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/px_xs_margin"
+            android:gravity="center"
+            tools:text="@string/px_error_title"
+            android:textColor="@color/ui_meli_black"
+            android:textSize="@dimen/px_xxxl_text"/>
+
+        <com.mercadopago.android.px.internal.view.MPTextView
+            android:id="@+id/mpsdkErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/px_xs_margin"
+            android:gravity="center"
+            android:textColor="@color/ui_meli_grey"
+            android:textSize="@dimen/px_m_text"
+            tools:text="@string/px_standard_error_message"/>
+
+        <com.mercadolibre.android.ui.widgets.MeliButton
+            android:id="@+id/mpsdkErrorRetry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/px_refresh_message"
+            app:state="normal"
+            app:type="optionPrimary"/>
+
+    </LinearLayout>
+
+    <com.mercadolibre.android.ui.widgets.MeliButton
+        android:id="@+id/mpsdkExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/px_s_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:text="@string/px_exit_label"
+        app:state="normal"
+        app:type="optionPrimary"/>
+</FrameLayout>

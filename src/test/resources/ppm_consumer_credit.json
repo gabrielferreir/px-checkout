@@ -1,0 +1,77 @@
+{
+  "description": "Mercado Crédito",
+  "id": "consumer_credits",
+  "payment_type_id": "digital_currency",
+  "payment_method_id": "consumer_credits",
+  "esc_status": "not_available",
+  "amount_configurations": {
+    "hash_no_discount": {
+      "payer_costs": [
+        {
+          "installments": 1,
+          "labels": [
+            "CFT_0,00%|TEA_0,00%"
+          ],
+          "installment_rate": 0,
+          "total_amount": 120,
+          "installment_amount": 120,
+          "min_allowed_amount": 1,
+          "max_allowed_amount": 250000,
+          "recommended_message": "1 cuota de $ 120,00 ($ 120,00)"
+        },
+        {
+          "installments": 3,
+          "labels": [
+            "recommended_installment",
+            "CFT_0,00%|TEA_0,00%"
+          ],
+          "installment_rate": 0,
+          "total_amount": 120,
+          "installment_amount": 40,
+          "min_allowed_amount": 1,
+          "max_allowed_amount": 250000,
+          "recommended_message": "3 cuotas de $ 40,00 ($ 120,00)"
+        },
+        {
+          "installments": 6,
+          "labels": [
+            "CFT_187,01%|TEA_142,79%",
+            "recommended_interest_installment_with_some_banks"
+          ],
+          "installment_rate": 34.49,
+          "total_amount": 161.38,
+          "installment_amount": 26.9,
+          "min_allowed_amount": 1,
+          "max_allowed_amount": 250000,
+          "recommended_message": "6 cuotas de $ 26,90 ($ 161,38)"
+        },
+        {
+          "installments": 9,
+          "labels": [
+            "CFT_217,13%|TEA_165,77%"
+          ],
+          "installment_rate": 56.9,
+          "total_amount": 188.28,
+          "installment_amount": 20.92,
+          "min_allowed_amount": 1,
+          "max_allowed_amount": 250000,
+          "recommended_message": "9 cuotas de $ 20,92 ($ 188,28)"
+        },
+        {
+          "installments": 12,
+          "labels": [
+            "CFT_219,13%|TEA_168,35%"
+          ],
+          "installment_rate": 77.4,
+          "total_amount": 212.88,
+          "installment_amount": 17.74,
+          "min_allowed_amount": 1,
+          "max_allowed_amount": 250000,
+          "recommended_message": "12 cuotas de $ 17,74 ($ 212,88)"
+        }
+      ],
+      "selected_payer_cost_index": 0
+    }
+  },
+  "default_amount_configuration": "hash_no_discount"
+}

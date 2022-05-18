@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mercadolibre.android.mlbusinesscomponents.components.loyalty.MLBusinessLoyaltyRingView
+        android:id="@+id/loyaltyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_m_margin"
+        android:layout_marginRight="@dimen/px_l_margin"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginLeft="@dimen/px_l_margin"
+        android:layout_marginBottom="@dimen/px_m_margin"
+        android:layout_marginStart="@dimen/px_l_margin"/>
+
+    <com.mercadolibre.android.mlbusinesscomponents.components.common.dividingline.MLBusinessDividingLineView
+        android:id="@+id/dividingLineView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hasTriangle="true"
+        android:layout_marginRight="@dimen/px_l_margin"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginLeft="@dimen/px_l_margin"
+        android:layout_marginStart="@dimen/px_l_margin"/>
+
+    <TextView
+        android:id="@+id/touchpointLabelView"
+        style="@style/touchpointLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px_s_margin"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginStart="@dimen/px_l_margin"
+        app:layout_goneMarginBottom="@dimen/px_m_margin"
+        android:visibility="gone"/>
+
+    <com.mercadolibre.android.mlbusinesscomponents.components.touchpoint.view.MLBusinessTouchpointView
+        android:id="@+id/touchpointView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <com.mercadolibre.android.mlbusinesscomponents.components.discount.MLBusinessDiscountBoxView
+        android:id="@+id/discountView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px_s_margin"
+        android:layout_marginRight="@dimen/px_l_margin"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginLeft="@dimen/px_l_margin"
+        android:layout_marginStart="@dimen/px_l_margin"
+        android:visibility="gone"/>
+
+    <com.mercadolibre.android.ui.widgets.MeliButton
+        android:id="@+id/showAllDiscounts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:type="actionSecondary"
+        tools:text="Ver todos los descuentos"
+        android:layout_marginTop="@dimen/px_m_margin"
+        android:layout_marginBottom="@dimen/px_m_margin"
+        android:layout_marginRight="@dimen/px_l_margin"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginLeft="@dimen/px_l_margin"
+        android:layout_marginStart="@dimen/px_l_margin"/>
+
+    <com.mercadolibre.android.mlbusinesscomponents.components.actioncard.MLBusinessActionCardView
+        android:id="@+id/money_split_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardBackgroundColor="@color/ui_meli_white"
+        android:layout_marginTop="@dimen/px_m_margin"
+        android:layout_marginBottom="@dimen/px_m_margin"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginStart="@dimen/px_l_margin"/>
+
+    <com.mercadolibre.android.mlbusinesscomponents.components.common.downloadapp.MLBusinessDownloadAppView
+        android:id="@+id/downloadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_m_margin"
+        android:layout_marginBottom="@dimen/px_m_margin"
+        android:layout_marginRight="@dimen/px_s_margin"
+        android:layout_marginEnd="@dimen/px_s_margin"
+        android:layout_marginLeft="@dimen/px_s_margin"
+        android:layout_marginStart="@dimen/px_s_margin"/>
+
+</LinearLayout>

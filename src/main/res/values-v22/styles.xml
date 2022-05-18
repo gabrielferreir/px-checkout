@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="background_consumer_credits">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+</resources>

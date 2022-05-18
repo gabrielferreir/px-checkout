@@ -1,0 +1,69 @@
+apply from:"$rootDir/gradle/base_android_lib.gradle"
+apply from:"$rootDir/gradle/jacoco.gradle"
+apply from:"$rootDir/gradle/static-analysis.gradle"
+apply from:"$rootDir/gradle/deploy_checkout.gradle"
+apply plugin:'kotlin-android'
+apply plugin:'kotlin-android-extensions'
+
+android {
+    defaultConfig {
+        multiDexEnabled true
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs = ['-Xjvm-default=enable', '-Xuse-experimental=kotlin.contracts.ExperimentalContracts']
+    }
+    testOptions {
+        unitTests.includeAndroidResources = true
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    testImplementation "junit:junit:$junit"
+    testImplementation "org.mockito.kotlin:mockito-kotlin:$mockitoKotlin"
+    testImplementation "org.robolectric:robolectric:$robolectric"
+    testImplementation "androidx.test:core:$androidTestCore"
+    testImplementation "androidx.arch.core:core-testing:$androidTestArch"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$kotlinCoroutines"
+    testImplementation "io.mockk:mockk:$mockk"
+
+    implementation "androidx.cardview:cardview:$cardView"
+    implementation "androidx.recyclerview:recyclerview:$recyclerView"
+    implementation "androidx.appcompat:appcompat:$appcompat"
+    implementation "com.google.android.material:material:$material"
+    implementation "com.mercadolibre.android.andesui:components:$andesUi"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
+    implementation "com.google.android:flexbox:$flexboxLayout"
+    implementation "androidx.viewpager2:viewpager2:$viewPager2"
+
+    implementation "com.squareup.okhttp3:okhttp:$okhttp"
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:$okhttp"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+
+    implementation("com.squareup.retrofit2:converter-gson:$retrofit") {
+        exclude group:"com.google.code.gson", module:"gson"
+    }
+    api project(':px-services')
+    implementation project(':px-addons')
+    implementation project(':px-core')
+
+    implementation "com.google.code.gson:gson:$gson"
+    implementation "com.mercadolibre.android:ui:$ui"
+    implementation "com.mercadolibre.android:carddrawer:$cardDrawer"
+    implementation "com.mercadolibre.android.mlbusinesscomponents:mlbusinesscomponents:$businessComponents"
+    implementation("com.mercadolibre.android:cardform:$cardForm") {
+        exclude group:'com.mercadopago.android.px', module:'addons'
+    }
+    implementation "com.mercadolibre.android:picasso-disk-cache:$picassoDiskCache"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutines"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle"
+    implementation "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle"
+}

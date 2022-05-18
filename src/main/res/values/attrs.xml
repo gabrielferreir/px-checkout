@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AdapterLinearLayout">
+        <attr name="spaceBetweenChildren" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MPTextView">
+        <attr name="customStyle" format="enum">
+            <enum name="black" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="extra_bold" value="2" />
+            <enum name="light" value="3" />
+            <enum name="regular" value="4" />
+            <enum name="semi_bold" value="5" />
+            <enum name="medium" value="6" />
+            <enum name="thin" value="7" />
+            <enum name="monospace" value="8" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MPAdaptativeTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension"/>
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float"/>
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MPEditText">
+        <attr name="errorColor" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PXElementDescriptorView">
+        <attr name="px_element_icon_height" format="dimension"/>
+        <attr name="px_element_icon_width" format="dimension"/>
+        <attr name="px_element_title_size" format="dimension"/>
+        <attr name="px_element_title_text_color" format="color"/>
+        <attr name="px_element_title_max_lines" format="integer"/>
+        <attr name="px_element_subtitle_size" format="dimension"/>
+        <attr name="px_element_subtitle_text_color" format="color"/>
+        <attr name="px_element_subtitle_max_lines" format="integer"/>
+        <attr name="px_appear_animation" format="reference"/>
+        <attr name="px_disappear_animation" format="reference"/>
+        <attr name="px_exit_animation" format="reference"/>
+        <attr name="android:gravity"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="PXFixedAspectRatioFrameLayout">
+        <attr name="px_aspectRatioWidth" format="integer"/>
+        <attr name="px_aspectRatioHeight" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PXScrollingPagerIndicator">
+        <attr name="px_spi_dotColor" format="color"/>
+        <attr name="px_spi_dotSelectedColor" format="color"/>
+        <attr name="px_spi_dotSize" format="dimension"/>
+        <attr name="px_spi_dotSelectedSize" format="dimension"/>
+        <attr name="px_spi_dotSpacing" format="dimension"/>
+        <attr name="px_spi_visibleDotCount" format="integer"/>
+        <attr name="px_spi_visibleDotThreshold" format="integer"/>
+        <attr name="px_spi_looped" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="PXCircularImageView">
+        <attr name="px_civ_stroke_width" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PulseView">
+        <attr name="pulse_color" format="color" />
+        <attr name="pulse_strokeWidth" format="dimension"/>
+        <attr name="pulse_radius" format="dimension"/>
+        <attr name="pulse_duration" format="integer"/>
+        <attr name="pulse_rippleAmount" format="integer"/>
+        <attr name="pulse_scale" format="float"/>
+        <attr name="pulse_type" format="enum">
+            <enum name="fillRipple" value="0"/>
+            <enum name="strokeRipple" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ToolbarCancel">
+        <attr name="icon_color" format="color" />
+    </declare-styleable>
+</resources>

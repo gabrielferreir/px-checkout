@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_method"
+    style="@style/card_view_consumer_credits"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/credits_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="@string/px_card_aspect_ratio"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/background_shape"
+            style="@style/background_consumer_credits"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/background"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            style="@style/logo_consumer_credits"
+            android:layout_marginTop="@dimen/px_s_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tag_guideline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottom_text"
+            app:layout_constraintWidth_percent="0.30"
+            app:layout_constraintHeight_percent="0.13"/>
+
+        <com.mercadopago.android.px.internal.view.LinkableTextView
+            android:id="@+id/top_text"
+            style="@style/top_text_consumer_credits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottom_text"
+            tools:text="Pague parcelado com sua linha de crédito" />
+
+        <com.mercadopago.android.px.internal.view.LinkableTextView
+            android:id="@+id/bottom_text"
+            style="@style/bottom_text_consumer_credits_large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/top_text"
+            app:layout_constraintStart_toStartOf="@id/top_text"
+            app:layout_constraintVertical_bias="1"
+            tools:text="Ao pagar aceito e declaro assinada a Cédula de Crédito Bancário." />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/tag_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <include
+            android:id="@+id/card_tag_container"
+            layout="@layout/px_cc_drawer_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tag_guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

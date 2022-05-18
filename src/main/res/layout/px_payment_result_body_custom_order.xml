@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:parentTag="android.widget.LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/px_white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/px_fragment_container_important"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mercadopago.android.px.internal.view.PaymentResultMethod
+        android:id="@+id/primaryMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mercadopago.android.px.internal.view.PaymentResultMethod
+        android:id="@+id/secondaryMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mercadopago.android.px.internal.view.PaymentResultReceipt
+        android:id="@+id/receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mercadolibre.android.andesui.message.AndesMessage
+        android:id="@+id/operationInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ui_4m"
+        android:layout_marginRight="@dimen/ui_4m" />
+
+    <FrameLayout
+        android:id="@+id/px_fragment_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mercadolibre.android.ui.widgets.MeliButton
+        android:id="@+id/view_receipt_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/ui_2m"
+        android:layout_marginHorizontal="@dimen/ui_4m"
+        app:type="actionSecondary"
+        tools:text="Ver detalle de operación" />
+
+    <include android:id="@+id/businessComponents"
+        layout="@layout/px_business_components"/>
+
+    <include layout="@layout/px_payment_result_help"
+        android:id="@+id/help"/>
+
+    <FrameLayout
+        android:id="@+id/px_fragment_container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</merge>

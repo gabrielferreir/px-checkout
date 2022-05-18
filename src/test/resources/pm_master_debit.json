@@ -1,0 +1,36 @@
+{
+  "id": "debmaster",
+  "name": "Mastercard Débito",
+  "payment_type_id": "debit_card",
+  "status": "active",
+  "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/debmaster.gif",
+  "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/debmaster.gif",
+  "deferred_capture": "unsupported",
+  "settings": [
+    {
+      "card_number": {
+        "validation": "standard",
+        "length": 16
+      },
+      "bin": {
+        "pattern": "^5",
+        "installments_pattern": "^5",
+        "exclusion_pattern": "^((539978)|(506221)|(533987)|(545290)|(545325)|(534926)|(544505)|(522312)|(522794)|(523013)|(527374)|(557920)|(551507)|(526192)|(528480))"
+      },
+      "security_code": {
+        "length": 3,
+        "card_location": "back",
+        "mode": "mandatory"
+      }
+    }
+  ],
+  "additional_info_needed": [
+    "cardholder_name",
+    "issuer_id"
+  ],
+  "min_allowed_amount": 5,
+  "max_allowed_amount": 200000,
+  "accreditation_time": 1440,
+  "financial_institutions": [
+  ]
+}

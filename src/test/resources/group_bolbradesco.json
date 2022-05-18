@@ -1,0 +1,9 @@
+{
+  "id": "bolbradesco",
+  "type": "payment_method",
+  "description": "Cash payment",
+  "comment": null,
+  "children": null,
+  "children_header": null,
+  "show_icon": true
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <com.mercadopago.android.px.internal.view.TitlePagerV2
+        android:id="@+id/title_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/px_s_margin"
+        android:paddingBottom="@dimen/px_s_margin">
+
+        <com.mercadopago.android.px.internal.view.PaymentMethodDescriptorView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="@dimen/px_m_margin"
+            android:paddingEnd="@dimen/px_title_pager_padding_right"
+            tools:text="1x $1200 CFT: 0,00%" />
+
+        <com.mercadopago.android.px.internal.view.PaymentMethodDescriptorView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="@dimen/px_m_margin"
+            android:paddingEnd="@dimen/px_title_pager_padding_right" />
+
+        <com.mercadopago.android.px.internal.view.PaymentMethodDescriptorView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="@dimen/px_m_margin"
+            android:paddingEnd="@dimen/px_title_pager_padding_right" />
+    </com.mercadopago.android.px.internal.view.TitlePagerV2>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/installments_container"
+        tools:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/installments_recycler_view"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:overScrollMode="never"
+            android:scrollbarThumbVertical="@color/px_checkout_installments_scrollbar"
+            android:layout_width="match_parent"
+            android:layout_height="165dp" />
+
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shadow_top"
+            android:layout_gravity="bottom">
+        </View>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/helper"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|end|right"
+        android:layout_marginEnd="@dimen/px_m_alternative_1_margin"
+        android:layout_marginRight="@dimen/px_m_alternative_1_margin"
+        android:src="@drawable/px_helper"
+        android:tint="@color/px_checkout_helper_icon"
+        android:visibility="gone" />
+</merge>

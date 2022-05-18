@@ -1,0 +1,6 @@
+{
+  "id": "consumer_credits",
+  "name": "Mercado Crédito",
+  "payment_type_id": "digital_currency",
+  "status": "active"
+}

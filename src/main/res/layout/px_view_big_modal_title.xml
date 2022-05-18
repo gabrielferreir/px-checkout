@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/ui_3m"
+    android:paddingEnd="@dimen/ui_3m"
+    android:paddingStart="@dimen/ui_3m">
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/ui_2_5m"
+        app:lineHeight="@dimen/ui_3m"
+        app:customStyle="semi_bold"
+        tools:text="70% OFF"/>
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/ui_1m"
+        android:textColor="#73000000"
+        tools:text="Merchant"/>
+
+    <com.mercadopago.android.px.internal.view.Badge
+        android:id="@+id/badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_1m"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        tools:visibility="visible"/>
+</LinearLayout>

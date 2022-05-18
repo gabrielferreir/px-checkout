@@ -1,0 +1,9 @@
+{
+  "id": "pagofacil",
+  "type": "payment_method",
+  "description": "Pago Fácil",
+  "comment": "It will be accredited instantly",
+  "children": null,
+  "children_header": null,
+  "show_icon": true
+}

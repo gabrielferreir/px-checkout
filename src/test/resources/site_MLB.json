@@ -1,0 +1,6 @@
+{
+  "id": "MLB",
+  "currency_id": "BRL",
+  "terms_and_conditions_url": "https://www.mercadopago.com.br/ajuda/termos-e-condicoes_300",
+  "should_warn_about_bank_interests": false
+}

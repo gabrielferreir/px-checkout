@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/px_white">
+
+        <com.mercadopago.android.px.internal.view.PaymentResultHeader
+            android:id="@+id/header"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            tools:layout_height="100dp"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:id="@+id/remedies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:context=".payment_result.remedies.RemediesFragment"
+            android:layout_weight="1"/>
+
+        <com.mercadopago.android.px.internal.features.payment_result.instruction.Instruction
+            android:id="@+id/instructions"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.mercadopago.android.px.internal.view.PaymentResultBody
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Body used to draw error messages and buttons of the old congrats -->
+        <LinearLayout
+            android:id="@+id/legacy_body"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.mercadopago.android.px.internal.features.payment_result.presentation.PaymentResultFooter
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

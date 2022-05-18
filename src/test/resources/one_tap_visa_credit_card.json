@@ -1,0 +1,49 @@
+{
+    "payment_method_id": "visa",
+    "payment_type_id": "credit_card",
+    "card": {
+        "id": "268434496",
+        "retry": {
+            "is_needed": false
+        },
+        "display_info": {
+            "type": "default",
+            "expiration": "9/24",
+            "last_four_digits": "3810",
+            "first_six_digits": "482469",
+            "issuer_id": "338",
+            "cardholder_name": "XAVIER C AMARILLA",
+            "security_code": {
+                "card_location": "back",
+                "length": 3
+            },
+            "card_pattern": [
+                4,
+                4,
+                4,
+                4
+            ],
+            "color": "#9DA2A4",
+            "font_color": "#676767",
+            "issuer_image": "buflo_payment_card_icbc",
+            "payment_method_image": "buflo_payment_card_visa-white",
+            "font_type": "dark",
+            "payment_method_image_url": "https://mobile.mercadolibre.com/remote_resources/image/buflo_payment_card_visa-white?density=xhdpi&locale=en",
+            "issuer_image_url": "buflo_payment_card_icbc"
+        }
+    },
+    "status": {
+        "enabled": true,
+        "main_message": {},
+        "secondary_message": {},
+        "detail": "active"
+    },
+    "benefits": {
+        "installments_header": {
+            "message": "Pay in up to 18 installments",
+            "background_color": "#FFFFFF",
+            "text_color": "#73000000",
+            "weight": "semi_bold"
+        }
+    }
+}

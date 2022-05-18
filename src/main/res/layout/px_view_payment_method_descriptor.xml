@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:weightSum="1">
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_xs_text"
+        android:layout_weight=".9"
+        tools:text="1x $1200" />
+
+    <FrameLayout
+        android:id="@+id/badge_experiment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"/>
+
+</LinearLayout>

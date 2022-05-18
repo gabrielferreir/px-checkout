@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/sheet_option_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/px_generic_method" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/sheet_option_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:lineSpacingExtra="4sp"
+        android:textSize="@dimen/px_s_text"
+        app:layout_constraintBottom_toTopOf="@+id/sheet_option_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/sheet_option_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Credito" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/sheet_option_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4sp"
+        android:maxLines="1"
+        android:textSize="@dimen/px_xs_text"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sheet_option_image"
+        app:layout_constraintTop_toBottomOf="@+id/sheet_option_title"
+        tools:text="Hasta 6 cuotas sin interés"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

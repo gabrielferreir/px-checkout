@@ -1,0 +1,7 @@
+{
+  "description": "Dinero en cuenta",
+  "id": "account_money",
+  "payment_type_id": "account_money",
+  "payment_method_id": "account_money",
+  "esc_status": "not_available"
+}

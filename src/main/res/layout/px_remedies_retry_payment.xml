@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/credits_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_3m"
+        android:layout_marginStart="@dimen/ui_3m"
+        android:layout_marginTop="@dimen/ui_3m"
+        android:lineSpacingExtra="@dimen/ui_linespacing_large"
+        android:textColor="@color/px_payment_result_component_remedies"
+        android:textSize="@dimen/px_s_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:hint="Código de seguridad"
+        tools:text="Vuelve a ingresarlo para confirmar el pago" />
+
+    <FrameLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_3m"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/payment_method_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_3m"
+        android:layout_marginStart="@dimen/ui_3m"
+        android:maxLines="1"
+        android:text="@string/px_total_to_pay"
+        android:textSize="@dimen/px_s_text"
+        android:visibility="gone"
+        app:customStyle="semi_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_container"
+        tools:visibility="visible" />
+
+    <com.mercadopago.android.px.internal.view.PaymentMethodDescriptorView
+        android:id="@+id/payment_method_descriptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_3m"
+        android:layout_marginStart="@dimen/ui_3m"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textSize="@dimen/px_s_text"
+        app:customStyle="semi_bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_method_title"
+        tools:text="1x $1200 CFT: 0,00%"
+        tools:visibility="visible" />
+
+    <com.mercadopago.android.px.internal.features.payment_result.remedies.view.CvvRemedy
+        android:id="@+id/cvv_remedy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_3m"
+        android:layout_marginStart="@dimen/ui_3m"
+        android:layout_marginTop="@dimen/ui_4m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_method_descriptor" />
+
+    <com.mercadopago.android.px.internal.view.LinkableTextView
+        android:id="@+id/bottom_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_2m"
+        android:layout_marginStart="@dimen/ui_2m"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/px_xxs_text"
+        android:lineSpacingExtra="@dimen/ui_linespacing_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_method_descriptor"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Al confirmar, aceptás los términos generales y las condiciones particulares de este préstamo." />
+</androidx.constraintlayout.widget.ConstraintLayout>

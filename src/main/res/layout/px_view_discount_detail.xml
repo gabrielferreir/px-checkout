@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/main_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/ui_3m">
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/ui_050m"
+        android:maxLines="2"
+        android:textColor="@color/px_color_translucent_black"
+        android:textSize="@dimen/ui_2m"
+        app:lineHeight="@dimen/ui_2_5m"
+        tools:text="Tope de descuento: $ 250" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/ui_1m"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/ui_050m"
+        android:textColor="@color/px_color_translucent_black"
+        android:textSize="@dimen/ui_2m"
+        app:lineHeight="@dimen/ui_2_5m"
+        tools:text="Tope disponible para consumir en un único pago. Válido hasta el 1 de agosto de 2019." />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/legal_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/ui_2m"
+        android:layout_marginEnd="@dimen/ui_2m"
+        android:layout_marginStart="@dimen/ui_2m"
+        android:layout_marginTop="@dimen/ui_5m"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/ui_050m"
+        android:text="@string/px_terms_and_conditions"
+        android:textColor="@color/ui_components_primary_color"
+        android:textSize="@dimen/ui_2m"
+        app:lineHeight="@dimen/ui_2m"
+        tools:text="Términos y condiciones" />
+</LinearLayout>

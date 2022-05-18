@@ -1,0 +1,10 @@
+{
+  "site": %SITE%,
+  "currency": %CURRENCY%,
+  "preference": %CHECKOUT_PREFERENCE%,
+  "available_payment_methods": [%PAYMENT_METHOD%],
+  "groups": [%PAYMENT_METHOD_SEARCH_ITEM%],
+  "payer_payment_methods": [%CUSTOM_SEARCH_ITEM%],
+  "one_tap": [%EXPRESS_METADATA%],
+  "retry": %RETRY%
+}

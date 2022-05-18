@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MercadoPagoTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/px_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ui_meli_grey</item>
+        <item name="colorAccent">@color/px_colorAccent</item>
+        <item name="android:colorAccent">@color/px_colorAccent</item>
+        <item name="colorControlNormal">@color/px_color_new_card_text</item>
+        <item name="actionMenuTextColor">@color/px_white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.MercadoPagoTheme.NoActionBar">
+        <item name="colorControlNormal">@color/px_toolbar_text</item>
+        <item name="android:background">@color/px_background</item>
+    </style>
+
+    <style name="SummaryToolbar" parent="Theme.MercadoPagoTheme.NoActionBar">
+        <item name="colorControlNormal">@color/andes_text_color_primary</item>
+    </style>
+
+    <style name="ToolbarTransparentTheme" parent="Theme.MercadoPagoTheme.NoActionBar">
+        <item name="colorControlNormal">@color/px_toolbar_text</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CvvToolbarTransparentTheme" parent="Theme.MercadoPagoTheme.NoActionBar">
+        <item name="colorControlNormal">@color/px_real_black</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ReviewToolbarTheme" parent="Theme.MercadoPagoTheme.NoActionBar">
+        <item name="colorControlNormal">@color/px_review_toolbar_text</item>
+    </style>
+
+</resources>

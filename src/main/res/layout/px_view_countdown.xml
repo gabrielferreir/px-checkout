@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mercadolibre.android.ui.widgets.MeliSpinner
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ui_4m"
+        android:layout_marginTop="@dimen/ui_2m"
+        android:layout_marginBottom="@dimen/ui_2m"
+        app:size="small"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_2m"
+        android:layout_marginBottom="@dimen/ui_2m"
+        android:layout_marginStart="@dimen/ui_2m"
+        android:layout_marginEnd="@dimen/ui_4m"
+        app:layout_constrainedWidth="true"
+        tools:text="Volviendo a tu seller favorito en 00:05"
+        app:layout_constraintStart_toEndOf="@id/progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

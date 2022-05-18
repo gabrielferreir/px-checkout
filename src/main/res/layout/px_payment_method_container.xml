@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:showIn="@layout/px_fragment_one_tap_payment"
+    tools:viewBindingIgnore="true">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/payment_method_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_height="500dp" />
+
+    <com.mercadopago.android.px.internal.features.one_tap.slider.pager.ScrollingPagerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:px_spi_dotColor="@color/px_expressCheckoutScrollIndicatorColor"
+        app:px_spi_dotSelectedColor="@color/ui_components_primary_color" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/confirm_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px_m_margin"
+        android:layout_marginTop="@dimen/px_s_margin"
+        android:layout_marginEnd="@dimen/px_m_margin"
+        android:layout_marginBottom="@dimen/px_m_margin"
+        tools:layout="@layout/px_fragment_confirm_button"
+        />
+
+</LinearLayout>

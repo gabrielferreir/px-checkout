@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/ui_components_success_color"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.mercadopago.android.px.internal.view.ToolbarCancel
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_toolbar_height"
+        android:layout_marginStart="@dimen/px_xs_margin"
+        android:theme="@style/ToolbarTransparentTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/px_ic_close"
+        tools:navigationIcon="@drawable/px_ic_close" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px_l_margin"
+        android:layout_marginLeft="@dimen/px_l_margin"
+        android:layout_marginEnd="@dimen/px_s_margin"
+        android:layout_marginRight="@dimen/px_s_margin"
+        android:lineSpacingExtra="@dimen/px_xxxs_margin"
+        android:textColor="@color/px_white"
+        android:textSize="@dimen/px_l_text"
+        app:customStyle="semi_bold"
+        app:layout_constraintBottom_toTopOf="@id/label"
+        app:layout_constraintEnd_toStartOf="@id/icon_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_goneMarginBottom="@dimen/px_l_margin"
+        tools:text="¡Listo, se acreditó tu pago! Lorem ipsum dolor sit  Lorem ipsum dolor sit" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px_l_margin"
+        android:layout_marginLeft="@dimen/px_l_margin"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="@dimen/px_s_margin"
+        android:layout_marginRight="@dimen/px_s_margin"
+        android:layout_marginBottom="@dimen/px_l_margin"
+        android:textColor="@color/px_white"
+        android:textSize="@dimen/px_xs_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/icon_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:text="¡Listo, se acreditó tu pago! Lorem ipsum dolor sit  Lorem ipsum dolor sit" />
+
+    <include
+        android:id="@+id/icon_container"
+        layout="@layout/px_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/px_l_margin"
+        android:layout_marginRight="@dimen/px_l_margin"
+        android:layout_marginBottom="@dimen/px_l_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+</merge>

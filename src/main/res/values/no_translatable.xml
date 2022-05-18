@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="px_amount_with_installments_holder" translatable="false">{0}x {1}</string>
+    <string name="px_total_amount_holder" translatable="false">({0})</string>
+    <string name="px_string_holder" translatable="false">{0}</string>
+    <string name="px_prefix_discount_amount" translatable="false">- {0}</string>
+    <string name="px_installments_by" translatable="false">x</string>
+    <string name="px_installments_cft" translatable="false">CFT: {0}</string>
+    <string name="px_installments_cftna" translatable="false">CFTNA: {0}</string>
+    <string name="px_payer_information_identification_type_and_number" translatable="false">{0}: {1}</string>
+    <string name="px_payer_information_first_and_last_name" translatable="false">{0} {1}</string>
+    <string name="px_identification_card_holder_hint" translatable="false">•• ••• •••</string>
+    <string name="px_discount_percent_off" translatable="false">{0}% OFF</string>
+    <string name="px_discount_amount_off_with_minus" translatable="false">- {0} OFF</string>
+    <string name="px_cpf_card_holder_identification_hint" translatable="false">*********-**</string>
+    <string name="px_cnpj_card_holder_identification_hint" translatable="false">********/****-**</string>
+
+    <!-- Card Drawer -->
+    <string name="px_card_aspect_ratio" translatable="false">H,256:158</string>
+    <string name="px_card_aspect_ratio_mediumres" translatable="false">H,256:126</string>
+    <string name="px_card_aspect_ratio_lowres" translatable="false">H,256:84</string>
+    <string name="px_card_aspect_ratio_xsmallres" translatable="false">H,256:68</string>
+    <string name="px_card_aspect_ratio_minires" translatable="false">H,256:36</string>
+
+    <!-- PX Render Mode -->
+    <string name="px_render_mode" translatable="false">low_res</string>
+
+</resources>

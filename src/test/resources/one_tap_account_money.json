@@ -1,0 +1,20 @@
+{
+    "payment_method_id": "account_money",
+    "payment_type_id": "account_money",
+    "account_money": {
+        "available_balance": 16725.22,
+        "invested": true,
+        "display_info": {
+            "type": "default",
+            "slider_title": "You are using money that is invested",
+            "message": "Balance in Mercado Pago: $ 16.725,22"
+        }
+    },
+    "status": {
+        "enabled": true,
+        "main_message": {},
+        "secondary_message": {},
+        "detail": "active"
+    },
+    "behaviours": {}
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <size android:width="70dp" android:height="40dp" />
+            <solid android:color="@color/px_darker_gray" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/px_item_focusable_list_selected" android:state_selected="true" />
+</selector>

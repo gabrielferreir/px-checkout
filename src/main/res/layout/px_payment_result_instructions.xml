@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.appcompat.widget.LinearLayoutCompat"
+    android:importantForAccessibility="no">
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/instruction_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:lineSpacingExtra="12dp"
+        android:textColor="@color/px_payment_result_black_text"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textSize="@dimen/px_xl_text"
+        tools:text="subtitle" />
+
+    <com.mercadopago.android.px.internal.features.payment_result.instruction.InstructionInfo
+        android:id="@+id/instruction_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <com.mercadopago.android.px.internal.view.AdapterLinearLayout
+        android:id="@+id/instruction_interactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <com.mercadopago.android.px.internal.view.AdapterLinearLayout
+        android:id="@+id/instruction_references"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <com.mercadopago.android.px.internal.view.AdapterLinearLayout
+        android:id="@+id/instruction_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="vertical" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/instruction_secondary_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:lineSpacingExtra="12dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textColor="@color/px_payment_result_black_text"
+        android:textSize="@dimen/px_xxs_text"
+        tools:text="Secondary info\nsecondary info" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/instruction_tertiary_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:lineSpacingExtra="12dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textColor="@color/px_payment_result_black_text"
+        android:textSize="@dimen/px_xxs_text"
+        tools:text="Tertiary info\ntertiary info" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/instruction_accreditation_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:lineSpacingExtra="12dp"
+        android:textColor="@color/px_payment_result_black_text"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textSize="@dimen/px_xxs_text"
+        tools:text="Comentario\ncomentario" />
+
+    <com.mercadopago.android.px.internal.view.MPTextView
+        android:id="@+id/instruction_accreditation_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:lineSpacingExtra="4dp"
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/px_time"
+        android:textSize="@dimen/px_xxs_text"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textColor="@color/px_payment_result_black_text"
+        tools:text="Se acreditara en x horas dfdsfsd fsdfsdfds sdfdsfds sdfdsfds sdfdsfds sdfdsfds sdfdsfds sdfdsfdsf sdfdsf sdfsdfsedf dsfsdfdsf sdfdsfds " />
+
+</merge>
